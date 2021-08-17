@@ -14,6 +14,27 @@
 
 }
 
+/* yleiskäyttöisiä tyylejä*/
+
+.v-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.h-right {
+    position: absolute;
+    right: 0;
+
+}
+
+.higlight {
+    color: var(--highligt);
+    display: inline-block;
+    transform: rotate(20deg);
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -33,8 +54,39 @@ header {
     top: 0;
     border-bottom:var(--highligt) solid 5px;
 
+}
+
+header .logo {
+    float: left;
+    font-size: 2em;
 
 }
+
+header .logo img {
+    height: 70px;
+    padding: 5px;
+    display: block;
+    float: left;
+}
+
+
+
+header nav a {
+    display: inline-block;
+    color:  var(--teksti-vaalea);
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0.5em;
+
+}
+
+header nav a:hover {
+    color: var(--teksti);
+    background-color: var(--highligt);
+
+}
+
+
 
 .ingressi {
     font-size: 1.2em;
@@ -55,7 +107,9 @@ header {
 /* main-lohko*/
 main {
     font-size: 1.5em;
-    line-height: 1.4em;    
+    line-height: 1.4em;  
+    padding-top: 80px;
+
 }
 
 
@@ -79,6 +133,8 @@ section {
 
 }
 
+
+
 /* Nimikkeet */
 .nimikkeet a{
     display: block;
@@ -99,6 +155,42 @@ section {
     background-color: var(--highligt);
 
 }
+
+/* Arviointi*/
+
+.arviointi {
+    padding: 0;
+
+}
+
+.arviointi > li {
+    list-style-type: none;
+}
+
+.arviointi > li > ul {
+    border-left: var(--highligt) solid 5px;
+
+}
+
+.arviointi > li > ul li {
+    padding: 0;
+    list-style-type: square;
+
+}
+
+.laatikot h2 {
+    color: var(--highligt);
+    
+}
+
+.laatikot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1em;
+    grid-gap: 40px;
+}
+
+
 
 footer {
     background-color: var(--bg-dark);
