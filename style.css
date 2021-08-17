@@ -96,6 +96,7 @@ header nav a:hover {
 }
 
 .ingressi::first-letter {
+    color: var(--highligt);
     float: left;
     font-size: 3.2em;
     line-height: 1em;
@@ -186,8 +187,12 @@ section {
 .laatikot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 1em;
+    font-size: 0.8em;
     grid-gap: 40px;
+}
+
+.laatikot h3 {
+    color: var(--highligt);
 }
 
 
